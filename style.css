@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
-    --cor-principal: #ffffff; /*  */
+    --cor-principal: #e47575; /*  */
     --cor-secundaria: #e0c23c; /* Cor do título (meus projetos, eu estudo programação) */
     --cor-destaque: #C92BFC; /* Fica ao passar o mouse no link do github na área Entre em contato */
 }
@@ -48,4 +48,41 @@ footer a:hover {
 .botao:active {
     background-color: #ffffff; /* Cor ao pressionar, clicar no botão  */
     transform: scale(0.98); /* Diminiu ligeiramente */
+}
+
+.footer {
+    background-color: #e0c23c;
+    color: #C92BFC;
+    padding: 20px 0;
+    text-align: center;
+
+
+}
+
+.contact-container {
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.contact-btn {
+   display: inline-block;
+   padding: 12px 24px;
+   color: #C92BFC;
+   background-color: #e0c23c;
+   text-decoration: none;
+   font-size: 18px;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: #C92BFC;
+}
+
+.contact-container h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #e47575;
+
 }
