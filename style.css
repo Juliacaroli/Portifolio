@@ -3,11 +3,12 @@
 :root {
     --cor-principal: #e47575; /*  */
     --cor-secundaria: #e0c23c; /* Cor do título (meus projetos, eu estudo programação) */
-    --cor-destaque: #C92BFC; /* Fica ao passar o mouse no link do github na área Entre em contato */
+    --cor-destaque: #e47575; /* Fica ao passar o mouse no link do github na área Entre em contato */
 }
 
 body {
     font-family: 'Chakra Petch', sans-serif;
+    background: linear-gradient(to right, #fcf3cb, #ffffff);
 }
 
 h1, h2, h5 {
@@ -52,23 +53,28 @@ footer a:hover {
 
 .footer {
     background-color: #e0c23c;
-    color: #C92BFC;
-    padding: 20px 0;
+    color: #e47575;
+    padding: 40px 0;
     text-align: center;
-
-
+    
+      
 }
 
 .contact-container {
     text-align: center;
-    margin-top: 10px;
-
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #e0c23c; /* Borda em volta */
+    border-radius: 10px; /* Bordas arredondadas */ 
+    width: 400px;
+    margin-top: 60px;
+  
 }
 
 .contact-btn {
    display: inline-block;
    padding: 12px 24px;
-   color: #C92BFC;
+   color: #e47575;
    background-color: #e0c23c;
    text-decoration: none;
    font-size: 18px;
@@ -77,12 +83,84 @@ footer a:hover {
 }
 
 .contact-btn:hover {
-    background: #C92BFC;
+    background: #ffe882;
 }
 
 .contact-container h2 {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 30px;
     color: #e47575;
 
+}
+ 
+.card {
+    margin-bottom: 20px; /* Adiciona espaço entre os cartões */
+    transition: transform 0.3s ease; /* Transição suave */
+   
+}
+
+.card:hover {
+    transform: scale(1.05);
+     
+    
+     
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+.contact-container a {
+    color: #e47575; /* Cor inicial */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s ease; /* Transição suave */
+}
+
+.contact-container a:hover {
+    color: #000000; /* Cor ao passar o mouse */
+}
+
+.badge i {
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
+    color: #ffffff; /* Cor do ícone */
+}
+ 
+ 
+/* Estilo para o container do card */
+.card {
+    position: relative; /* Necessário para o posicionamento do vídeo */
+    overflow: hidden; /* Impede que o vídeo ultrapasse os limites do card */
+}
+
+/* Estilo para a imagem */
+.card-thumbnail {
+    width: 100%; /* A imagem ocupa toda a largura do card */
+    height: auto; /* A altura da imagem será ajustada proporcionalmente */
+    object-fit: cover; /* A imagem vai preencher o espaço sem distorcer */
+    transition: opacity 0.3s ease; /* Transição suave para desaparecer */
+}
+
+/* Estilo para o vídeo */
+.card-video {
+    position: absolute; /* Coloca o vídeo sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 100%; /* Largura do vídeo igual ao da imagem */
+    height: auto; /* Mantém a altura proporcional ao tamanho da imagem */
+    object-fit: cover; /* O vídeo vai cobrir o espaço da imagem */
+    opacity: 0; /* Inicialmente o vídeo estará invisível */
+    pointer-events: none; /* Impede interação com o vídeo */
+    transition: opacity 0.3s ease; /* Transição suave ao aparecer */
+    z-index: 1; /* Coloca o vídeo sobre a imagem */
+}
+
+/* Estilo quando o card é hover */
+.card:hover .card-thumbnail {
+    opacity: 0; /* Torna a imagem invisível ao passar o mouse */
+}
+
+.card:hover .card-video {
+    opacity: 1; /* Torna o vídeo visível ao passar o mouse */
+    pointer-events: auto; /* Permite interação com o vídeo */
+    z-index: 2; /* Garante que o vídeo fique acima da imagem */
 }

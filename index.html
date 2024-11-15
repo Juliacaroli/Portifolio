@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <title>Meu portfólio</title>
 </head>
 <style>
@@ -14,6 +15,9 @@
         margin: 0;
         padding: 10px;
     }
+    
+
+    
 </style>
 <body>
     <header class="container text-center">
@@ -25,19 +29,36 @@
             que já desenvolvi!</p>
         <p>Minhas habilidades</p>
         <div>
-            <p class="badge bg-secondary">HTML</p>
-            <p class="badge bg-secondary">CSS</p>
-            <p class="badge bg-secondary">JavaScript</p>
-            <p class="badge bg-secondary">Scratch</p>
+            <p class="badge bg-secondary">
+                <i class="fab fa-html5"></i> HTML
+            </p>
+            <p class="badge bg-secondary">
+                <i class="fab fa-css3-alt"></i> CSS
+            </p>
+            <p class="badge bg-secondary">
+                <i class="fab fa-js"></i> JavaScript
+            </p>
+            <p class="badge bg-secondary">
+                <i class="fas fa-gamepad"></i> Scratch
+            </p>
         </div>
+        
     </header>
+    
     <main class="container mt-5">
         <h2>Meus projetos</h2>
         <div class="row">
+            <div class="row g-4"> <!-- g-4 adiciona um espaçamento padrão maior entre as colunas -->
+
             <!-- Projeto 1 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/site.verde-na-cidade.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-image-container">
+                        <img src="img/site.verde-na-cidade.png" class="card-img-top card-thumbnail" alt="Imagem do projeto">
+                        <video class="card-video" loop muted>
+                            <source src="videos/projeto1.mp4" type="video/mp4">
+                        </video>
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Verde na Cidade: Um blog que te ajuda a ser mais sustentável</h5>
                         <p class="card-text">Este projeto é uma página web que apresenta um blog cheio de dicas que ajudam a ter um mundo mais sustentável, mais limpo. A página é estilizada com CSS para uma visualização agradável e usa fontes
@@ -47,10 +68,16 @@
                     </div>
                 </div>
             </div>
+
             <!-- Projeto 2 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/scratch.Por-agua-abaixo.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-image-container">
+                        <img src="img/scratch.Por-agua-abaixo.png" class="card-img-top card-thumbnail" alt="Imagem do projeto">
+                        <video class="card-video" loop muted>
+                            <source src="videos/projeto2.mp4" type="video/mp4">
+                        </video>
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Decidindo o Futuro: Uma Jornada Interativa sobre um jogo onde terá que eliminar os lixos dos rios </h5>
                         <p class="card-text">Este projeto é um jogo interativo onde o jogador ajuda a limpar rios poluídos, coletando lixos que surgem na água, como plásticos e garrafas. A cada item recolhido, ele ganha pontos. O objetivo é conscientizar de forma divertida sobre a importância da preservação ambiental e da reciclagem. </p>
@@ -62,7 +89,12 @@
             <!-- Projeto 3 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/site.flashcards-quimica.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-image-container">
+                        <img src="img/site.flashcards-quimica.png" class="card-img-top card-thumbnail" alt="Imagem do projeto">
+                        <video class="card-video" loop muted>
+                            <source src="videos/projeto3.mp4" type="video/mp4">
+                        </video>
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Química Fácil: Estude com Flashcards Interativos
                         </h5>
@@ -76,7 +108,12 @@
             <!-- Projeto 4 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/Books-store.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-image-container">
+                        <img src="img/Books-store.png" class="card-img-top card-thumbnail" alt="Imagem do projeto">
+                        <video class="card-video" loop muted>
+                            <source src="videos/projeto4.mp4" type="video/mp4">
+                        </video>
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Livros ao Seu Alcance: A Melhor Loja Online para Apaixonados por Leitura
                         </h5>
@@ -90,7 +127,12 @@
             <!-- Projeto 5 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/cecm.29-de-abril.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-image-container">
+                        <img src="img/cecm.29-de-abril.png" class="card-img-top card-thumbnail" alt="Imagem do projeto">
+                        <video class="card-video" loop muted>
+                            <source src="videos/projeto5.mp4" type="video/mp4">
+                        </video>
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Escola CECM: Conheça a Sala do 2º B do Ensino Médio
                         </h5>
@@ -100,21 +142,69 @@
 
                     </div>
                 </div>
+            </div> 
+
+            <!-- Projeto 6 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-image-container">
+                        <img src="img/AFS-assinatura.png" class="card-img-top card-thumbnail" alt="Imagem do projeto">
+                        <video class="card-video" loop muted>
+                            <source src="videos/projeto6.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Descubra o Mundo dos Animes e Mangás com: Anime Fan Sanctuary
+                        </h5>
+                        <p class="card-text">Se você é fã de animes e mangás, Anime Fan Sanctuary é a plataforma ideal para você. Com uma assinatura acessível, o site oferece uma vasta seleção de animes e mangás, com novos lançamentos regularmente. A interface simples e intuitiva facilita a navegação, e a qualidade de imagem nos mangás é excelente, permitindo uma leitura confortável.
+
+                            Além disso, o Anime F.S oferece conteúdo exclusivo, como animes simulcast e mangás licenciados, garantindo que você esteja sempre atualizado. Com opções de legenda em vários idiomas, é uma escolha prática e divertida para todos os fãs do gênero.
+                        </p>
+                        <button class="botao" onclick="location.href='https://juliacaroli.github.io/assinatura.animes.mang-s/' "> Veja o Projeto  </button>
+
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
+    
+
      
+    
 
     <footer class="contact-container">
         <h2>Entre em contato</h2>
         <div>
-            <a href="https://github.com/Juliacaroli">GitHub</a>  <!-- Coloque seu link do seu GitHub -->
+            <a href="https://github.com/Juliacaroli" target="_blank">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
         </div>
-        <p class="my-5 text-center">© Copyright 2024. Produzido por Julia Caroline</p> <!-- Mude para seu nome -->
     </footer>
+    
+    
+    
+        <p class="my-5 text-center">© Copyright 2024. Produzido por Julia Caroline</p> <!-- Mude para seu nome -->
+     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Seleciona todos os vídeos
+        const videos = document.querySelectorAll('.card-video');
+    
+        // Adiciona eventos de mouse para reproduzir e pausar
+        videos.forEach((video) => {
+            video.addEventListener('mouseenter', () => {
+                video.play(); // Reproduz o vídeo ao passar o mouse
+            });
+            video.addEventListener('mouseleave', () => {
+                video.pause(); // Pausa o vídeo ao tirar o mouse
+                video.currentTime = 0; // Reinicia o vídeo
+            });
+        });
+    </script>
+    
+    
 </body>
 
 </html>
